@@ -1,0 +1,41 @@
+<html>
+<head>
+	<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight|Merriweather:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles2.css">
+	<meta name="viewport" content="width=device-width" />
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+	<div id="wrapper" class="home-wrapper">
+		<div id="nav">
+			<a href="index.html"><h1 id="logo">Alex Ke Photography</h1></a>
+			<a class="nav-link" href="about.html"><span class="highlight">About</span></a>
+			<a class="nav-link" style="padding-left: 10px;" href="portfolio.html"><span class="highlight">Portfolio</span></a>
+			<a class="nav-link" style="padding-left: 10px;" href="contact.html"><span class="highlight">Contact</span></a>
+		</div>
+
+		<div id="home-gallery">
+			<div id="home-gallery-inner">
+				<a href="#" data-featherlight="images/1.jpg"><img id="home-gallery-1" class="gallery-img" src="images/thumbs/thumb1.jpg"></a>
+				<a href="#" data-featherlight="images/2.jpg"><img id="home-gallery-2" class="gallery-img" src="images/thumbs/thumb2.jpg"></a>
+				<a href="#" data-featherlight="images/5.jpg"><img id="home-gallery-3" class="gallery-img" src="images/thumbs/thumb5.jpg"></a>
+				<a href="#" data-featherlight="images/4.jpg"><img id="home-gallery-4" class="gallery-img" src="images/thumbs/thumb4.jpg"></a>
+				<a href="#" data-featherlight="images/6.jpg"><img id="home-gallery-5" class="gallery-img" src="images/thumbs/thumb6.jpg"></a>
+			</div>
+		</div>
+		<div id="icon-div">
+			<a href="https://www.instagram.com/keysshots/" target="_blank"><img class="icon" src="insta.png"></a>
+		</div>
+	</div>
+	<script src="//code.jquery.com/jquery-latest.js"></script>
+	<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="script.js"></script>
+	<script>
+		var overallWidth = $('#home-gallery-1').width() + $('#home-gallery-2').width() + $('#home-gallery-3').width() + $('#home-gallery-4').width() + $('#home-gallery-5').width() + 50;
+		$('#home-gallery-inner').width(overallWidth);
+	</script>
+</body>
+</html>
