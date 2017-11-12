@@ -1,0 +1,42 @@
+<html>
+<head>
+	<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight|Merriweather:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles2.css">
+	<meta name="viewport" content="width=device-width" />
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="nav">
+			<a href="index.html"><h1 id="logo">Alex Ke Photography</h1></a>
+			<a class="nav-link" href="about.html"><span class="highlight">About</span></a>
+			<a class="nav-link" style="padding-left: 10px;" href="portfolio.html"><span class="highlight">Portfolio</span></a>
+			<a class="nav-link" style="padding-left: 10px;" href="contact.html"><span class="highlight">Contact</span></a>
+		</div>
+
+		<div id="main-page" class="about">
+			<div id="main-inner">
+				
+				<div id="about-text">
+					<h2>Contact Me</h2>
+					<p>Feel free to contact me if you are interested in doing a shoot. You can text me using the number below, or feel free to send me a direct message on Instagram.</p>
+					<p>Phone: (919) 780-3159</p>
+					<p>Instagram: <a href="https://www.instagram.com/keysshots/">@keysshots</a></p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<script src="//code.jquery.com/jquery-latest.js"></script>
+	<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script>
+		var navHeight = $('#nav').height();
+		var screenHeight = $(window).height();
+		var newHeight = screenHeight - navHeight - 51;
+		$('#main-page').height(newHeight);
+	</script>
+</body>
+</html>
